@@ -1,0 +1,26 @@
+[
+  {
+    "expressao": "878+5",
+    "resultado": 883.0,
+    "modo": "DEG",
+    "ts": 1761929056.4724746
+  },
+  {
+    "expressao": "sin(33)",
+    "resultado": 0.544639035,
+    "modo": "DEG",
+    "ts": 1761929062.346011
+  },
+  {
+    "expressao": "222-99",
+    "resultado": 123.0,
+    "modo": "RAD",
+    "ts": 1761929071.9910161
+  },
+  {
+    "expressao": "cos(99)",
+    "resultado": -0.156434465,
+    "modo": "DEG",
+    "ts": 1761929077.4967844
+  }
+]
