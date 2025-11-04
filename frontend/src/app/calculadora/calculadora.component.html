@@ -1,0 +1,47 @@
+<div class="container">
+  <h1>⚡ HelpTech Calculadora Neon</h1>
+
+  <div class="calc-wrapper">
+    <div class="calc-left">
+      <label>Operação:</label>
+      <select [(ngModel)]="operacao">
+        <option value="+">Somar (+)</option>
+        <option value="-">Subtrair (-)</option>
+        <option value="*">Multiplicar (*)</option>
+        <option value="/">Dividir (/)</option>
+        <option value="sin">Seno (sin)</option>
+        <option value="cos">Cosseno (cos)</option>
+        <option value="tan">Tangente (tan)</option>
+        <option value="sqrt">Raiz Quadrada (√)</option>
+        <option value="pow">Potência (xʸ)</option>
+        <option value="log">Logaritmo (log)</option>
+      </select>
+
+      <label>Valor 1:</label>
+      <input type="number" [(ngModel)]="valor1" placeholder="Digite o valor 1">
+
+      <label *ngIf="precisaSegundoValor()">Valor 2:</label>
+      <input *ngIf="precisaSegundoValor()" type="number" [(ngModel)]="valor2" placeholder="Digite o valor 2">
+
+      <button class="btn-calc" (click)="calcular()">= Calcular</button>
+    </div>
+
+    <div class="calc-right" *ngIf="resultado !== null">
+      <h2>🧮 Execução</h2>
+      <p class="expressao">
+        {{ valor1 }}
+        <span *ngIf="precisaSegundoValor()"> {{ operacao }} {{ valor2 }} </span>
+        <span *ngIf="!precisaSegundoValor()"> {{ operacao }} </span>
+      </p>
+      <h3>= {{ resultado }}</h3>
+    </div>
+  </div>
+
+ <footer>
+  <p>UniAnchieta © 2025</p>
+  <p><strong>Alison Antunes Miranda</strong> (RA 2302431)</p>
+  <p><strong>Guilherme Caldeira Silva</strong> (RA 2304035)</p>
+  <p><strong>Vitor Barreto Cury</strong> (RA 2301741)</p>
+</footer>
+
+</div>

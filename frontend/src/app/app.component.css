@@ -1,0 +1,19 @@
+/* Estilos do componente principal */
+.container {
+  text-align: center;
+  padding: 20px;
+  color: #00d9ff;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00d9ff;
+  text-shadow: 0 0 8px #00d9ff88;
+}
+
+app-calculadora {
+  display: block;
+  margin: 0 auto;
+}
+
